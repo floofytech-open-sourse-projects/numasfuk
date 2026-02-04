@@ -1,0 +1,39 @@
+# read first line
+4
+
+# check if empty
+E Z(120)
+
+# move to working cell
+A
+
+# convert first byte to uppercase if needed
+# compare with 'a' (61)
+C(61) Z(40)
+# compare with 'z' (7A)
+C(7A) N(40)
+
+# it's lowercase, subtract 32
+0(32)
+-(32)
+
+# print the byte
+5(0A)
+
+# move back to input cell
+B
+
+# dump (prints the whole string)
+9
+
+# clear string
+3
+
+# read next line
+4
+
+# loop
+J(0)
+
+# exit point
+5(0A)
