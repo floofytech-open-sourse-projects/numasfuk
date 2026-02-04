@@ -1,4 +1,5 @@
 NUMASFUK
+
 NUMASFUK is a chaotic, tape‑driven esoteric programming language built around single‑character opcodes, raw jumps, and a 16‑cell circular string tape.
 It embraces danger, weirdness, and direct memory hits — a language that rewards precision and chaos in equal measure.
 
@@ -86,6 +87,7 @@ To force GitHub to treat .naf files as NUMASFUK, add this to your repo:
 Code
 *.naf linguist-language=NUMASFUK
 *.naf linguist-detectable=true
+
 License
 NUMASFUK is released under the Unlicense, placing it in the public domain.
 You may use, modify, distribute, or relicense it without restriction.
