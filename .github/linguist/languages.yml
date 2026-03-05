@@ -1,0 +1,7 @@
+NUMASFUK:
+  type: programming
+  extensions:
+    - ".naf"
+  tm_scope: source.numasfuk
+  color: "#cc66ff"
+  ace_mode: text
