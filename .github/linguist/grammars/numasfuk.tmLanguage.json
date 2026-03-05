@@ -1,0 +1,89 @@
+{
+  "scopeName": "source.numasfuk",
+  "name": "NUMASFUK",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#errors" },
+    { "include": "#hex" },
+    { "include": "#binary" },
+    { "include": "#decimal" },
+    { "include": "#core" },
+    { "include": "#extended" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "match": "#.*$",
+          "name": "comment.line.number-sign.numasfuk"
+        }
+      ]
+    },
+
+    "core": {
+      "patterns": [
+        {
+          "match": "\\b[1-9]\\b",
+          "name": "keyword.operator.core.numasfuk"
+        }
+      ]
+    },
+
+    "extended": {
+      "patterns": [
+        {
+          "match": "\\b[A-BE0\\+\\-C JZN]\\b",
+          "name": "keyword.operator.extended.numasfuk"
+        }
+      ]
+    },
+
+    "hex": {
+      "patterns": [
+        {
+          "match": "[5C]\\([0-9A-Fa-f]+\\)",
+          "name": "constant.numeric.hex.numasfuk"
+        }
+      ]
+    },
+
+    "binary": {
+      "patterns": [
+        {
+          "match": "8\\([01]+\\)",
+          "name": "constant.numeric.binary.numasfuk"
+        }
+      ]
+    },
+
+    "decimal": {
+      "patterns": [
+        {
+          "match": "[0\\+\\-6JZN]\\([0-9]+\\)",
+          "name": "constant.numeric.decimal.numasfuk"
+        }
+      ]
+    },
+
+    "errors": {
+      "patterns": [
+        {
+          "match": "[5C]\\([^0-9A-Fa-f][^)]*\\)",
+          "name": "invalid.illegal.hex.numasfuk"
+        },
+        {
+          "match": "8\\([^01][^)]*\\)",
+          "name": "invalid.illegal.binary.numasfuk"
+        },
+        {
+          "match": "[0\\+\\-6JZN]\\([^0-9][^)]*\\)",
+          "name": "invalid.illegal.decimal.numasfuk"
+        },
+        {
+          "match": "[0-9A-Z]\\([^)]*$",
+          "name": "invalid.illegal.unclosed.numasfuk"
+        }
+      ]
+    }
+  }
+}
