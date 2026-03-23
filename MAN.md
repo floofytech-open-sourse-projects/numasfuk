@@ -4,10 +4,7 @@ NAME
     numasfuk – chaotic, tape‑driven esoteric programming language
 
 SYNOPSIS
-    numasfuk file.naf
-    numasfuk --dump file.naf
-    numasfuk --version
-    numasfuk --help
+    (ruby interpreter) ruby NAF-interpreter.rb program.naf
 
 DESCRIPTION
     NUMASFUK is a deliberately unsafe, tape‑driven esoteric programming
